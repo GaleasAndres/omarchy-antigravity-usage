@@ -1,0 +1,26 @@
+#!/bin/bash
+set -euo pipefail
+
+script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+svg_src="$script_dir/../assets/agy.svg"
+
+if [[ ! -f $svg_src ]]; then
+  echo "Error: $svg_src not found" >&2
+  exit 1
+fi
+
+target="/usr/share/omarchy/shell/plugins/agents/assets"
+
+if [[ -d $target ]]; then
+  if [[ -w $target ]]; then
+    cp "$svg_src" "$target/agy.svg"
+    echo "Installed Antigravity mark to $target/agy.svg"
+  else
+    echo "Copying Antigravity mark to $target/agy.svg (requires sudo)..."
+    sudo cp "$svg_src" "$target/agy.svg"
+    echo "Installed Antigravity mark to $target/agy.svg"
+  fi
+else
+  echo "Target directory $target not found." >&2
+  exit 1
+fi
