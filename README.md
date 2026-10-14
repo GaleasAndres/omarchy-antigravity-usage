@@ -1,6 +1,8 @@
 # Antigravity Usage Collector for Omarchy
 
 An [Omarchy](https://omarchy.org) shell service plugin that automatically collects Google Antigravity (agy) telemetry, token usage by day/model, and quota limits for the desktop Agents bar widget.
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/5b62c42a-dab4-4f2a-b57e-2a10f0448504" />
+
 
 ## How it works
 
