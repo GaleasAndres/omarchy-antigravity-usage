@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "galeasandres.antigravity-usage",
+  "name": "Antigravity Usage Collector",
+  "version": "1.0.0",
+  "author": "Andres Galeas",
+  "license": "MIT",
+  "homepage": "https://github.com/GaleasAndres/omarchy-antigravity-usage",
+  "description": "Background service that collects Google Antigravity (agy) telemetry and token quotas for the Omarchy Agents panel",
+  "kinds": [
+    "service"
+  ],
+  "entryPoints": {
+    "service": "Service.qml"
+  }
+}
